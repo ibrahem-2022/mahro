@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zona</title>
+    <link rel="stylesheet" href="ibr.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>crud</h1>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input onkeyup=" gettotal()" type="text" id="price" placeholder="price">
+                <input onkeyup=" gettotal()" type="text" id="teces" placeholder="teces">
+                <input onkeyup=" gettotal()" type="text" id="ads" placeholder="ads">
+                <input onkeyup=" gettotal()" type="text" id="descound" placeholder="descound">
+                <small id="total"></small>
+            </div>
+                <input type="number" id="cont" placeholder="cont">
+                <input type="text" id="catogry" placeholder="catogry">
+                <button id="btn">create</button>
+        </div>
+        <div class="outpot">
+            <div class="search">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search"> 
+                <div class="btnxx">
+                <button onclick=" getsearchmood(this.id)" id="searchTitle">search By Title </button>
+                <button onclick=" getsearchmood(this.id)" id="searchcatogry">search By catogry</button></div>
+            </div>
+            <table>
+                <div id="deleteall">
+
+                </div>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>update</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script  src="ibrahem.js"></script>
+</body>
+</html>
